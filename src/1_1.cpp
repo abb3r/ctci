@@ -17,6 +17,23 @@ extern bool checkForUniqueChars(uint16_t stringIndex, char* argv[])
     return true;
 };
 
+extern bool checkForUniqueChars(std::string s)
+{
+    std::map<char,uint16_t> charCount;
+
+    uint16_t index = 0;
+    while (s[index]!='\0')
+    {
+        if( charCount[s[index]] ==1)
+            return false;
+        else
+            charCount[s[index]]++;
+        index++;
+    }
+    return true;
+};
+
+
 extern void checkStringsForUniqueChars(uint16_t numOfStrings, char* argv[])
 {
     uint16_t stringIndex = 1;

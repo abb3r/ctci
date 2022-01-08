@@ -8,4 +8,5 @@ fi
 cd build
 cmake -G "MinGW Makefiles" ../src
 make 
-./runCode abber tahir cba cdab
+#./runCode abber tahir cba cdab
+./unittests/runTests

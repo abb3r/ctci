@@ -19,15 +19,15 @@ void sortChars(char* str)
         }
         index++;
     }
-    std::cout<<"sorted string: "<<str<<std::endl;
+    //std::cout<<"sorted string: "<<str<<std::endl;
 }
 
 
 //if all chars of str1 are in
 bool checkPermutationOf(char* str1, char * str2)
 {
-    std::cout<<"Str1:"<<str1<<std::endl;
-    std::cout<<"Str2:"<<str2<<std::endl;
+    //std::cout<<"Str1:"<<str1<<std::endl;
+    //std::cout<<"Str2:"<<str2<<std::endl;
     uint16_t indexStr1=0;
     uint16_t indexStr2=0;
     if(str1[indexStr1]== '\0' or str2[indexStr2]=='\0')
