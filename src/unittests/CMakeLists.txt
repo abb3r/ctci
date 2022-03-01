@@ -13,10 +13,12 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-set(SRC
-testRunner.cpp)
+set(SRC testRunner.cpp)
 
 add_executable(runTests ${SRC})
-target_link_libraries(runTests gtest_main)
+
+target_include_directories(runTests PRIVATE ../)
+target_link_libraries(runTests PRIVATE gtest_main)
+
 include(GoogleTest)
 gtest_discover_tests(runTests)

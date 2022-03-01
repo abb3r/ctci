@@ -1,8 +1,8 @@
 #include <gtest/gtest.h>
 #include <vector>
-#include "../1_1.cpp"
+#include "tasks/1_1.cpp"
 
-TEST(StrinManTests, testUniqueChars) {
+TEST(StrinManTests, 1_1_uniqueCharsTest) {
 
   std::vector<std::string> list = {"abber", "tahir","" ,"cba", "cdab"};
   ASSERT_EQ(checkForUniqueChars(list[0]),false);

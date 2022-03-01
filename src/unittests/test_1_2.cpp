@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include <vector>
-#include "../1_2.cpp"
-TEST(StrinManTests, testCheckPermutation) {
+#include "tasks/1_2.cpp"
+TEST(StrinManTests, 1_2_checkPermutationTest) {
 
   std::vector<std::string> list = {"abber", "tahir","" ,"cba", "cdab"};
   ASSERT_EQ(checkPermutationOf(const_cast<char *>(list[0].c_str()), 
