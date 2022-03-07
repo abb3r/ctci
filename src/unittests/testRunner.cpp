@@ -1,7 +1,5 @@
 #include <gtest/gtest.h>
-#include "test_1_1.cpp"
-#include "test_1_2.cpp"
-#include "test_1_3.cpp"
+#include "Chapter1Tests.cpp"
 
 int main(int argc , char ** argv)
 {

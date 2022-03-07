@@ -19,6 +19,7 @@ add_executable(runTests ${SRC})
 
 target_include_directories(runTests PRIVATE ../)
 target_link_libraries(runTests PRIVATE gtest_main)
+target_link_libraries(runTests PRIVATE chapter1)
 
 include(GoogleTest)
 gtest_discover_tests(runTests)
